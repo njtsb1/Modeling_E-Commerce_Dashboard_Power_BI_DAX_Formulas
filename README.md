@@ -20,7 +20,7 @@ Maximum Sales Value, Minimum Sales Value)
 - D_Discount (Product_ID, Discount, Discount Band)
 - D_Details (*)
 - D_Calendar – Created by DAX with calendar()
-- F_ales (SK_ID, Product_ID, Product, Units Sold, Sales Price, Discount Band, Segment, Country, Salers, Profit, Date (fields))
+- F_Sales (SK_ID, Product_ID, Product, Units Sold, Sales Price, Discount Band, Segment, Country, Salers, Profit, Date (fields))
 
 ![Screenshot](./img/tables.png)
 

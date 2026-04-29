@@ -22,7 +22,21 @@ Maximum Sales Value, Minimum Sales Value)
 - D_Calendário – Created by DAX with calendar()
 - F_Vendas (SK_ID, Product_ID, Product, Units Sold, Sales Price, Discount Band, Segment, Country, Salers, Profit, Date (fields))
 
+![Screenshot](./img/tables.png)
+
 *Check the information that was not included in the other dimension tables that provide more details about sales.
+
+Example of a table created by grouping the information.
+
+![Screenshot](./img/table.png)
+
+Example of a column being built from a conditional statement – ​​Product Index
+
+![Screenshot](./img/column.png)
+
+Reorganize the columns
+
+![Screenshot](./img/columns.png)
 
 You can use the following points as a basis:
 
@@ -31,13 +45,9 @@ You can use the following points as a basis:
 - Write in the readme the process of building your diagram
 - Talk about the steps, functionalities and DAX functions used in this project.
 
-- ...
+Star Schema
 
-![Screenshot](./img/)
-
-- ...
-
-![Screenshot](./img/)
+![Screenshot](./img/star-schema.png)
 
 [LICENSE](/LICENSE)
 

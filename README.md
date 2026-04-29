@@ -14,13 +14,13 @@ Therefore, the following tables will be created from the main table:
 
 Financials_origem (hidden mode – backup)
 
-- D_Produtos (Product_ID, Product, Average Units Sold, Average Sales Value, Median Sales Value,
+- D_Products (Product_ID, Product, Average Units Sold, Average Sales Value, Median Sales Value,
 Maximum Sales Value, Minimum Sales Value)
-- D_Produtos_Detalhes(Product_ID, Discount Band, Sale Price, Units Sold, Manufacturing Price)
-- D_Descontos (Product_ID, Discount, Discount Band)
-- D_Detalhes (*)
-- D_Calendário – Created by DAX with calendar()
-- F_Vendas (SK_ID, Product_ID, Product, Units Sold, Sales Price, Discount Band, Segment, Country, Salers, Profit, Date (fields))
+- D_Products_Details (Product_ID, Discount Band, Sale Price, Units Sold, Manufacturing Price)
+- D_Discount (Product_ID, Discount, Discount Band)
+- D_Details (*)
+- D_Calendar – Created by DAX with calendar()
+- F_ales (SK_ID, Product_ID, Product, Units Sold, Sales Price, Discount Band, Segment, Country, Salers, Profit, Date (fields))
 
 ![Screenshot](./img/tables.png)
 

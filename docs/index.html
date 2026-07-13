@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Modeling E-Commerce Dashboard — Financial Sample</title>
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="brand">
+      <h1 id="site-title">Modeling E-Commerce Dashboard</h1>
+      <p id="site-subtitle">Power BI · DAX Formulas · Financial Sample</p>
+    </div>
+
+    <nav class="top-nav" role="navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" class="nav-btn active" data-page="index" id="nav-index"></a></li>
+        <li><a href="star_schema.html" class="nav-btn" data-page="star" id="nav-star"></a></li>
+      </ul>
+    </nav>
+
+    <div class="controls" role="region" aria-label="Controls">
+      <button id="theme-toggle" class="icon-btn" aria-pressed="false" aria-label="Toggle theme">
+        <svg class="icon moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        <svg class="icon sun" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.76 4.84l-1.8-1.79L3.17 4.84l1.79 1.8 1.8-1.8zM1 13h3v-2H1v2zm10 9h2v-3h-2v3zM17.24 4.84l1.8-1.79 1.79 1.79-1.8 1.8-1.79-1.8zM20 11v2h3v-2h-3zM4.22 19.78l1.79-1.8-1.8-1.79-1.79 1.8 1.8 1.79zM12 6a6 6 0 100 12 6 6 0 000-12zM19.78 19.78l-1.8-1.79-1.79 1.79 1.8 1.8 1.79-1.8z"/></svg>
+      </button>
+
+      <div class="lang-switch" role="group" aria-label="Language switch">
+        <label for="lang-select" class="visually-hidden">Language</label>
+        <select id="lang-select" aria-label="Select language">
+          <option value="en">EN-US</option>
+          <option value="pt">PT-BR</option>
+          <option value="es">ES</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <aside class="side-menu" aria-label="Page menu">
+      <ul>
+        <li><button class="menu-btn active" data-section="overview"></button></li>
+        <li><button class="menu-btn" data-section="data-model"></button></li>
+        <li><button class="menu-btn" data-section="measures"></button></li>
+        <li><button class="menu-btn" data-section="visuals"></button></li>
+      </ul>
+    </aside>
+
+    <section class="content" id="content" aria-live="polite">
+      <article class="hero" id="hero">
+        <h2 id="hero-title">Modeling E-Commerce Dashboard</h2>
+        <p id="hero-desc">Power BI · DAX Formulas · Create star schema from Financial Sample</p>
+        <div class="cta-row">
+          <a href="star_schema.html" class="primary-btn" id="open-star"></a>
+          <button class="secondary-btn" id="learn-more"></button>
+        </div>
+      </article>
+
+      <div class="grid" role="region" aria-label="Dashboard overview">
+        <section class="card wide" aria-labelledby="card1-title">
+          <h3 id="card1-title"></h3>
+          <p class="muted" id="card1-desc"></p>
+          <div class="stat" id="stat-products"></div>
+        </section>
+
+        <section class="card tall" aria-labelledby="card2-title">
+          <h3 id="card2-title"></h3>
+          <p class="muted" id="card2-desc"></p>
+          <div class="chart-placeholder" aria-hidden="true"></div>
+        </section>
+
+        <section class="card" aria-labelledby="card3-title">
+          <h3 id="card3-title"></h3>
+          <p class="muted" id="card3-desc"></p>
+          <ul class="list" id="list-sample"></ul>
+        </section>
+
+        <section class="card" aria-labelledby="card4-title">
+          <h3 id="card4-title"></h3>
+          <p class="muted" id="card4-desc"></p>
+          <div class="mini-grid">
+            <div class="mini" id="mini-a"></div>
+            <div class="mini" id="mini-b"></div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p id="footer-text"></p>
+  </footer>
+
+  <script src="./src/script.js" defer></script>
+</body>
+</html>

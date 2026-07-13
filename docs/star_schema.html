@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Star Schema — Modeling E-Commerce Dashboard</title>
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="brand">
+      <h1 id="site-title-2">Star Schema</h1>
+      <p id="site-subtitle-2">Fact and Dimension tables from Financial Sample</p>
+    </div>
+
+    <nav class="top-nav" role="navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" class="nav-btn" data-page="index" id="nav-index-2"></a></li>
+        <li><a href="star_schema.html" class="nav-btn active" data-page="star" id="nav-star-2"></a></li>
+      </ul>
+    </nav>
+
+    <div class="controls" role="region" aria-label="Controls">
+      <button id="theme-toggle-2" class="icon-btn" aria-pressed="false" aria-label="Toggle theme">
+        <svg class="icon moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        <svg class="icon sun" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.76 4.84l-1.8-1.79L3.17 4.84l1.79 1.8 1.8-1.8zM1 13h3v-2H1v2zm10 9h2v-3h-2v3zM17.24 4.84l1.8-1.79 1.79 1.79-1.8 1.8-1.79-1.8zM20 11v2h3v-2h-3zM4.22 19.78l1.79-1.8-1.8-1.79-1.79 1.8 1.8 1.79zM12 6a6 6 0 100 12 6 6 0 000-12zM19.78 19.78l-1.8-1.79-1.79 1.79 1.8 1.8 1.79-1.8z"/></svg>
+      </button>
+
+      <div class="lang-switch" role="group" aria-label="Language switch">
+        <label for="lang-select-2" class="visually-hidden">Language</label>
+        <select id="lang-select-2" aria-label="Select language">
+          <option value="en">EN-US</option>
+          <option value="pt">PT-BR</option>
+          <option value="es">ES</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <aside class="side-menu" aria-label="Page menu">
+      <ul>
+        <li><button class="menu-btn" data-section="schema-overview"></button></li>
+        <li><button class="menu-btn active" data-section="tables"></button></li>
+        <li><button class="menu-btn" data-section="relationships"></button></li>
+      </ul>
+    </aside>
+
+    <section class="content" id="content-2" aria-live="polite">
+      <article class="hero" id="hero-2">
+        <h2 id="hero-title-2">Star Schema from Financial Sample</h2>
+        <p id="hero-desc-2">Create fact and dimension tables: fSales, dProducts, dDetails, dDiscounts, dProductDetails</p>
+        <div class="cta-row">
+          <a href="index.html" class="primary-btn" id="back-index"></a>
+          <button class="secondary-btn" id="export-sample"></button>
+        </div>
+      </article>
+
+      <div class="schema-grid" role="region" aria-label="Star schema visualization">
+        <div class="fact-card" aria-labelledby="fact-title">
+          <h3 id="fact-title"></h3>
+          <p class="muted" id="fact-desc"></p>
+          <ul class="schema-list" id="fact-fields"></ul>
+        </div>
+
+        <div class="dim-grid">
+          <div class="dim-card" aria-labelledby="dim1-title">
+            <h4 id="dim1-title"></h4>
+            <ul id="dim1-fields" class="schema-list"></ul>
+          </div>
+
+          <div class="dim-card" aria-labelledby="dim2-title">
+            <h4 id="dim2-title"></h4>
+            <ul id="dim2-fields" class="schema-list"></ul>
+          </div>
+
+          <div class="dim-card" aria-labelledby="dim3-title">
+            <h4 id="dim3-title"></h4>
+            <ul id="dim3-fields" class="schema-list"></ul>
+          </div>
+
+          <div class="dim-card" aria-labelledby="dim4-title">
+            <h4 id="dim4-title"></h4>
+            <ul id="dim4-fields" class="schema-list"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p id="footer-text-2"></p>
+  </footer>
+
+  <script src="./src/script.js" defer></script>
+</body>
+</html>
